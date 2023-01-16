@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book Finder</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <style>
+      p {
+        font-weight: bolder;
+        color: rgb(5, 141, 66);
+      }
+      .searchTitle, .searchSubtitle, #searchType {
+        color: rgb(31, 28, 28);
+        font-family: 'Sue Ellen Francisco', cursive;
+      }
+      .form-control {
+        font-family: 'Quicksand', sans-serif;
+      }
+      .card, card-body{
+        border-color: rgb(133, 253, 103);
+      }
+      .logo{
+      width: 110px;
+      margin: 5px;
+      padding: 5px;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+           <img src="http://ozlem.kayasaroglu.com/wp-content/uploads/2022/08/cropped-ozlem-kayasaroglu-acar-4.png" class="logo">
+          </a>
+    
+          <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+            <a class="me-3 py-2 text-dark text-decoration-none" href="https://ozlem.kayasaroglu.com/muzik-player/">Med-Player</a>
+            <a class="me-3 py-2 text-dark text-decoration-none" href="https://ozlem.kayasaroglu.com/javascript-quiz-app/">Quiz-App</a>
+            <a class="me-3 py-2 text-dark text-decoration-none" href="https://ozlem.kayasaroglu.com/doviz-kuru/">Cur Converter</a>
+            <a class="py-2 text-dark text-decoration-none fw-bold" href="#">BookFinder</a>
+          </nav>
+        </div>  
+        
+        
+          <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal searchTitle">BOOK SEARCH BAR</h1>
+            <p class="fs-5 text-muted searchSubtitle ">Google Book kütüphanesinde olan tüm kitapları yazara veya kitap adına göre arama yapabilir, Yazar adı, kitap adı, yayınevi, yayımlanma tarihi, kitap hakkında açıklamalar bölümlerinden bilgi alabilirsiniz. </p>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control fst-italic" id="searchBook" placeholder="Aramak istediğiniz kitabın adı"/>
+                <select id="searchType">
+                  <option value="title">Kitaplarda</option>
+                  <option value="author">Yazarda</option>
+                </select>
+                <button
+                  class="btn btn-outline-success"
+                  id="searchButton"
+                  type="button"
+                >
+                  Ara
+                </button>
+              </div>
+              <span id="alert" class="bg-danger"></span>
+            </div>
+          </div>
+      </header>
+    </div>
+   
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="book.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
