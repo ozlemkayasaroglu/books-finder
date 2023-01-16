@@ -13,7 +13,7 @@ class UI{
                     </div>
 
                     <div class="col-md-9">
-                        <h4>Contact</h4>
+                        <h4>Arama Sonucu:</h4>
                             <ul class="list-group">
                             <li class="list-group-item">
                             <p>Yazar:</p> ${book.volumeInfo.authors}</li>
